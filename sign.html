@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title> Welcome to Login Page </title>
+    <style>
+      .sig{
+            text-align: center;
+            margin: 180px;
+            border: 8px solid red;
+            font-size: 30px;
+      }
+    </style>
+</head>
+<body>
+    <div class="sig">
+    <h3> Please enter following details to Sign Up </h3>
+    <form name="Doc" action="signup.jsp" method="post" onsubmit="return vaildate();">
+       Enter your name : <input type="text" name="txt1">
+       <br>
+       Enter your password : <input type="password" name="pw"><br>
+       Minimum Balance : <input name="bal" value = 1000><br>
+       Enter your email : <input type="text" name="email"> <br>
+       <input type="submit">
+    </form>
+    <script>
+        function validate(){
+      var x = document.Doc.txt1.value;
+      var y = document.Doc.pw.value;
+      if(x=="hii"){
+        alert("Name cant be empty");
+      return false;
+        }}
+    </script>
+    </div>
+</body>
+</html>
